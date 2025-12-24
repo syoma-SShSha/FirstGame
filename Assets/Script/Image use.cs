@@ -14,6 +14,6 @@ public class Imageuse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Image>().fillAmount += 0.01f;
+        GetComponent<Image>().fillAmount += ((Time.deltaTime) * (0.5f));
     }
 }
