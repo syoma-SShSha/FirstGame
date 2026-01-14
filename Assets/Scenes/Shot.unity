@@ -299,7 +299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   playerTransform: {fileID: 1941665079}
   speed: 2
-  HP: 5
+  HP: 3
+  MaxHP: 3
   HpImage: {fileID: 1988314934}
 --- !u!65 &201382898
 BoxCollider:

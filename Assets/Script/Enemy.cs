@@ -5,7 +5,8 @@ public class Enemy : MonoBehaviour
 {
     public Transform playerTransform;
     public float speed = 0;
-    public int HP = 5;
+    public float HP = 5;
+    public float MaxHP = 5;
     public Image HpImage;
     private MeshRenderer mesh;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,6 +36,6 @@ public class Enemy : MonoBehaviour
     }
     void HpChange() 
     {
-        HpImage.fillAmount -= 0.2f;
+        HpImage.fillAmount -= (1f / MaxHP);
     }
 }
