@@ -37,5 +37,6 @@ public class Enemy : MonoBehaviour
     void HpChange() 
     {
         HpImage.fillAmount -= (1f / MaxHP);
+        //HpImage.fillAmount = HP / MaxHP;
     }
 }
