@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Question5 : MonoBehaviour
 {
-    AudioSource a;
+    public AudioSource a;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,7 +14,7 @@ public class Question5 : MonoBehaviour
     {
         
     }
-    void Onclicked()
+    public void Onclicked()
     {
         a.Play();
 
