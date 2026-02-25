@@ -1,0 +1,12 @@
+diff a/Assets/Script/Question1.cs b/Assets/Script/Question1.cs	(rejected hunks)
+@@ -10,6 +10,10 @@
+         {
+             for (int a = 0;a <= 8; a++)
+             {
++                if (a * 2 >= 10)
++                {
++                    
++                } 
+                 Instantiate(Cube, new Vector3(a * 2, 0, i * 2), Quaternion.identity);
+             }
+         }
