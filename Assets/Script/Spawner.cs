@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 public class Spawner : MonoBehaviour
 {
     public int waveCount = 1;
+    public int killCount = 0;
     public List<GameObject> wave1 = new List<GameObject>();
     public List<GameObject> wave2 = new List<GameObject>();
     public List<GameObject> wave3 = new List<GameObject>();
@@ -17,7 +18,33 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        switch (waveCount)
+        {
+            case 1:
+                if(wave1.Count == killCount)
+                {
+                    waveCount++;
+                    AllInstantiate();
+                    killCount = 0;
+                }
+                break;
+            case 2:
+                if (wave2.Count == killCount)
+                {
+                    waveCount++;
+                    AllInstantiate();
+                    killCount = 0;
+                }
+                break;
+            case 3:
+                if (wave3.Count == killCount)
+                {
+                    //waveCount++;
+                    //AllInstantiate();
+                    killCount = 0;
+                }
+                break;
+        }
     }
     public void AllInstantiate()
     {

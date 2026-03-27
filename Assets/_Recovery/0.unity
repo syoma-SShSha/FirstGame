@@ -1086,8 +1086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41359b08b734a0d4b84aa731e72b61ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  waveCount: 1
-  killCount: 0
+  waveCount: 3
   wave1:
   - {fileID: 8779280494940835948, guid: f086f3abbc0030544b34b1fe3489e110, type: 3}
   - {fileID: 8779280494940835948, guid: f086f3abbc0030544b34b1fe3489e110, type: 3}
@@ -1258,7 +1257,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1711,6 +1710,6 @@ SceneRoots:
   - {fileID: 891925515}
   - {fileID: 1988797965}
   - {fileID: 1941665079}
-  - {fileID: 1718393763}
   - {fileID: 2018535121}
+  - {fileID: 1718393763}
   - {fileID: 1656346184}

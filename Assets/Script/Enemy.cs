@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+    private Spawner spawner;
     public Transform playerTransform;
     public float speed = 0;
     public float HP = 5;
@@ -13,7 +14,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         mesh = GetComponent<MeshRenderer>();
-
+        spawner = GameObject.FindObjectOfType<Spawner>();
+        playerTransform = GameObject.FindObjectOfType<PlayerManager>().transform;
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class Enemy : MonoBehaviour
             HpChange();
             if(HP <= 0) 
             {
+                spawner.killCount++;
                 Destroy(gameObject);
             }
         }
