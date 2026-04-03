@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80f2c66ca2a7be48babf468fcba8db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBullet
+  speed: 2
   time: 0
   bullet: {fileID: 8449972314896050082, guid: 37271e9d533792649b1593d2dce3667e, type: 3}
 --- !u!1 &6778672596881636045

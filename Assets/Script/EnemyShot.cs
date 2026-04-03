@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour
+public class EnemyShot : MonoBehaviour
 {
     public float time;
     public GameObject bullet;
@@ -19,6 +19,10 @@ public class EnemyBullet : MonoBehaviour
             time = 0;
             Instantiate(bullet, transform.position, transform.rotation);
         }
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
         
     }
 }

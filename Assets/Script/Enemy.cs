@@ -24,9 +24,9 @@ public class Enemy : MonoBehaviour
         transform.LookAt(playerTransform);
         transform.position += transform.forward * speed * Time.deltaTime;
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Bullet")
         {
             HP -= 1;
             HpChange();

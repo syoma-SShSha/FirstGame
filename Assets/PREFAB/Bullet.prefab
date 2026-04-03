@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee9037daaf638e4bbf6094f2e6d0b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bullet
+  lifetime: 7
 --- !u!54 &6935852025003081391
 Rigidbody:
   m_ObjectHideFlags: 0
