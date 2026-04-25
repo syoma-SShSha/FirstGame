@@ -13,6 +13,11 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         AllInstantiate();
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy"); 
+        foreach (GameObject enemy in enemies)
+        {
+            Debug.Log(enemy.name);
+        }
     }
 
     // Update is called once per frame

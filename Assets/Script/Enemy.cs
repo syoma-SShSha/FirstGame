@@ -9,11 +9,9 @@ public class Enemy : MonoBehaviour
     public float HP = 5;
     public float MaxHP = 5;
     public Image HpImage;
-    private MeshRenderer mesh;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        mesh = GetComponent<MeshRenderer>();
         spawner = GameObject.FindObjectOfType<Spawner>();
         playerTransform = GameObject.FindObjectOfType<PlayerManager>().transform;
     }
